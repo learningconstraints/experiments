@@ -58,3 +58,23 @@ The forth cell calls the R script that will plot the false negative ratio and fa
 Another type of view is available in the plotMetrics.ipynb file
 
 Running the notebook will read all csv files (previously created with machine learning function in processData.ipynb) and wil create a graph for each value in oracle and each metrics(Accuracy, FNR, FPR, NRV, Precision, Recall, Specificity). Each line on the graph represent the metric for a file.
+
+## Configuration Tree Performance
+
+Launch Jupyter to open the folder in a browser (no need to relaunch if already open)
+```
+jupyter notebook
+```
+
+With the browser, go to "configuration_tree_performance" folder
+
+Here are severals notebooks.
+
+The notebooks processData and processDataClustered and almost the same as the ones in heatmaps and metrics view, enhanced with a versionning system and the ability to change the machine learning tree configuration.
+
+The notebook createHeatmaps uses data created by the processData notebook, and needs a file containing min and max between file compared (creating in cell #3, no worry). With this data, for each configuration, a set of heatmaps are created, with a shared scale for each metric, as an easier way to compare results.
+
+Still, this way of comparing using heatmaps does not allow to compare configurations face to face. This is what the notebook createTables tries to solve. It drops the threshold dimensions by getting a mean value. The table processed will have a configuration by row and still get the number of configuration by column, like the heatmaps previously created. By coloring metrics value and sorting by configuration parameter, it is possible to determine visually best parameters for each metric.
+
+The last notebook, createPlots, allows to create plots the same way as in "metrics_view", based on data created by processDataClustered.
+For a same threshold and metric, results of several configurations are represented. The notebook also have a function to create the same plot, but each configuration will be calculated minus a base configuration.

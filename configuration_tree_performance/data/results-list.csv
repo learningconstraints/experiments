@@ -1,0 +1,9 @@
+NBINS,NSUBS,class_weight,criterion,dataPath,datasetPath,file,filename,max_depth,max_features,max_leaf_nodes,min_impurity_split,min_samples_leaf,min_samples_split,min_weight_fraction_leaf,perf,presort,random_state,results,splitter,srM,srm,srs,thresholds
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,,,1e-07,2,2,0.0,perf,False,,./data/SQLite-0001.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,0.8,,1e-07,1,2,0.0,perf,False,,./data/SQLite-0002.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,0.8,,1e-07,2,2,0.0,perf,False,,./data/SQLite-0003.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,0.9,,1e-07,1,2,0.0,perf,False,,./data/SQLite-0004.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,0.9,,1e-07,2,2,0.0,perf,False,,./data/SQLite-0005.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,SQLite,SQLite,,,,1e-07,1,2,0.0,perf,False,,./data/SQLite-0006.csv,best,4554,1,45,False
+40,10,,entropy,./data/,../datasets/,Dune,Dune,,,,1e-07,1,2,0.0,perf,False,,./data/Dune-0001.csv,best,2305,1,23,False
+40,10,,entropy,./data/,../datasets/,Dune,Dune,,,,1e-07,2,2,0.0,perf,False,,./data/Dune-0002.csv,best,2305,1,23,False
