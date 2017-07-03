@@ -78,3 +78,16 @@ Still, this way of comparing using heatmaps does not allow to compare configurat
 
 The last notebook, createPlots, allows to create plots the same way as in "metrics_view", based on data created by processDataClustered.
 For a same threshold and metric, results of several configurations are represented. The notebook also have a function to create the same plot, but each configuration will be calculated minus a base configuration.
+
+
+## Regression
+
+This folder is about comparing performances between classification tree, the only one which as been used here for now, and regression tree.
+
+Still in notebook, there are two ways to compare offered, a set of heatmaps and a plot.
+
+For each system, four heatmaps are drawn. The two first are the heatmaps from the first folder, one considering classification and the other one regression, the third represents the difference of performance between both, and the fourth the normalized difference (red means classification is better, yellow the regression is better).
+These heatmaps can be created using the processData notebook, which uses the helper 2.calculateMetrics.R to display the heatmaps.
+
+The plots represent mean metrics by number of configuration in the training set. Two curves are drawn, one for regression, one for classification.
+Data for this is processed by processDataForMeanMetrics notbook, which can be then used by plotMeanMetrics notebook to created the plots.
